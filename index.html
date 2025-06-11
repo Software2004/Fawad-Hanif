@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -60,18 +61,112 @@
 
     <!-- My about section  -->
     <section id="timeline" class="timeline-section">
-
         <div class="tab-container animated delay-3">
             <div class="tabs">
                 <div class="tab active" data-tab="about">About Me</div>
                 <div class="tab" data-tab="education">Education</div>
-                <div class="tab " data-tab="experience">Experience</div>
-                <div class="tab " data-tab="certifications">Certifications</div>
+                <div class="tab" data-tab="experience">Experience</div>
+                <div class="tab" data-tab="certifications">Certifications</div>
                 <div class="tab" data-tab="skills">Skills</div>
             </div>
         </div>
 
-        <div class="tab-content " id="experience">
+        <!-- About Tab -->
+        <div class="tab-content active" id="about">
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Who Am I?</h3>
+                        <p class="timeline-description">
+                            I'm a Software Engineer with a degree from the University of Sargodha (2021–2025)— one of
+                            Pakistan's top-ranked public universities for tech education. But more than just a degree
+                            holder, I'm a problem-solver who loves turning complex ideas into elegant, user-friendly
+                            Android apps. <br><br>
+                            <b>Tech Philosophy:</b> "I believe apps should work like magic, but the code should read like poetry."
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Current Projects</h3>
+                        <p class="timeline-description">
+                            I'm currently building innovative Android apps that blend cutting-edge tech with real-world
+                            impact. My AI-powered e-learning platform (FYP) uses Python-driven video generation and
+                            Firebase to deliver personalized education. For local businesses, I developed a inCity
+                            e-commerce app with secure payments. I'm also streamlining the grooming industry with
+                            a barber booking app featuring real-time scheduling. Each project is crafted with
+                            scalability in mind—leveraging modern tools like Kotlin, MVVM, and Room DB to solve everyday
+                            challenges.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">What Drives Me?</h3>
+                        <p class="timeline-description">
+                            My journey started with a curiosity about how things work—now, I build them. Whether it's
+                            crafting Kotlin-powered apps or tinkering with AI integrations, I'm obsessed with the
+                            intersection of technology and human experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">My Goal!</h3>
+                        <p class="timeline-description">
+                            To build intuitive, impactful mobile experiences that solve real problems—bridging
+                            technology and human needs. I want to push boundaries with AI-driven solutions, mentor
+                            aspiring developers, and contribute to open-source projects that make tech more accessible.
+                            <br><br>
+                            <b>Long-term?</b> To lead innovation in Android development while staying hands-on with
+                            code—because the best creators never stop learning. <i>Let's build the future.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Tab -->
+        <div class="tab-content" id="education">
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-degree">BS in Software Engineering</div>
+                        <div class="education-school">University of Sargodha</div>
+                    </div>
+                    <div class="education-body">
+                        <div class="education-year"><i class="fas fa-calendar-alt"></i> 2021 - 2025</div>
+                        <div class="education-description">
+                            <b>CGPA: 3.93/4.0 (7th Semester)</b><br><br>
+                            Ranked among top performers while diving into Android development from the 3rd
+                            semester—balancing algorithms and APIs with equal passion.
+                            <br><br><b>Key Focus:</b> Mobile App Development (Kotlin/Java), Database Systems, AI/Cloud fundamentals.
+                            <br><b>Final Year Project:</b> AI-driven E-Learning Platform (Kotlin + Python).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-degree">F.Sc. Pre-Engineering</div>
+                        <div class="education-school">Punjab College of Science, Sahiwal(Sargodha)</div>
+                    </div>
+                    <div class="education-body">
+                        <div class="education-year"><i class="fas fa-calendar-alt"></i> 2019 - 2021</div>
+                        <div class="education-description">
+                            <b>Marks: 1053/1100 | Score: 95.72%</b><br><br>
+                            Built a rock-solid foundation in problem-solving and logic—skills that now fuel my clean
+                            code philosophy.
+                            My education isn't just about grades; it's about applying theory to build real apps. From
+                            acing exams to debugging late-night code, I thrive where discipline meets creativity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div class="tab-content" id="experience">
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
@@ -109,7 +204,6 @@
                             Bridging classroom knowledge with real-world app development, focusing on Kotlin, Firebase,
                             and modern Android practices.
                             Mentoring peers and contributing to a collaborative tech culture within the university.
-
                         </p>
                     </div>
                 </div>
@@ -129,68 +223,16 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2024</span>
-                        <h3 class="timeline-title">Freelance Web Developer</h3>
-                        <h4 class="timeline-subtitle">Upwork & Local Clients</h4>
-                        <p class="timeline-description">As a freelance web developer, I played a pivotal role in
-                            designing and deploying dynamic websites for startups and small businesses. My
-                            responsibilities included developing custom WordPress and PHP solutions, integrating
-                            plugins, payment gateways, and implementing responsive design to ensure seamless user
-                            experiences across all devices. I collaborated closely with clients to understand their
-                            vision, translating business requirements into functional and aesthetically pleasing
-                            websites.Throughout the development process, I focused on delivering high-quality, scalable
-                            websites while prioritizing performance, SEO, and security. This experience not only
-                            enhanced my technical expertise but also strengthened my interpersonal skills.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - present</span>
-                        <h3 class="timeline-title">Head of Data Science Group</h3>
-                        <h4 class="timeline-subtitle">Techive - a University Society</h4>
-                        <p class="timeline-description">I am honored to serve as the Head of the Data Science Group
-                            under the Techive Society at the University level. Techive Society is a dynamic community
-                            that encompasses various specialized groups, including Web Development, Data Science, and
-                            Cyber Security. In my role as the head of the Data Science group, I lead a passionate team
-                            focused on advancing the understanding of data science concepts, machine learning, and big
-                            data analytics. My responsibilities include organizing workshops, training sessions, and
-                            collaborative projects that promote hands-on learning and knowledge sharing among students.
-                            Through this role, I aim to cultivate a strong foundation in data science, empowering
-                            students to excel in this rapidly evolving field while fostering a culture of innovation and
-                            technical excellence.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - 2024</span>
-                        <h3 class="timeline-title"> Vice President of Technical Society</h3>
-                        <h4 class="timeline-subtitle">Software Engineering Department Society</h4>
-                        <p class="timeline-description">I proudly hold the position of Vice President of the Technical
-                            Society at the University of Sargodha, within the Software Engineering Department. In this
-                            leadership role, I am dedicated to promoting technical growth and fostering innovation among
-                            students. I oversee and coordinate events such as workshops, coding challenges, and tech
-                            talks, aimed at enhancing the technical acumen of students and keeping them abreast of the
-                            latest industry trends. My role involves strategic planning, team collaboration, and
-                            ensuring the society's activities align with the evolving needs of the tech community. This
-                            experience has honed my leadership, communication, and organizational skills, while fueling
-                            my passion for technology and education.</p>
-                    </div>
-                </div> -->
             </div>
         </div>
 
-
+        <!-- Certifications Tab -->
         <div class="tab-content" id="certifications">
             <div class="timeline">
-
-                <!-- 1. Udemy Certification (Android Development) -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <h3 class="timeline-title">Android App Development with Kotlin & Java</h3>
-                        <h4 class="timeline-subtitle"><a href="[Your-Udemy-Certificate-Link]" target="_blank">Udemy</a>
-                        </h4>
+                        <h4 class="timeline-subtitle"><a href="#" target="_blank">Udemy</a></h4>
                         <p class="timeline-description">
                             I completed an intensive Udemy course on modern Android development using Kotlin and Java,
                             mastering key concepts like Jetpack components, MVVM architecture, and RESTful API
@@ -201,7 +243,6 @@
                     </div>
                 </div>
 
-                <!-- 2. University of Sargodha (Mobile App Development) -->
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h3 class="timeline-title">Mobile Application Development</h3>
@@ -216,7 +257,6 @@
                     </div>
                 </div>
 
-                <!-- 3. Softec 2025 Competition -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <h3 class="timeline-title">Mobile App Innovation Contestant</h3>
@@ -228,18 +268,17 @@
                             intelligent scheduler with mood-tracking capabilities, using Gemini API to analyze user
                             input and suggest optimal task timing based on emotional patterns. Key features included
                             seamless synchronization between Room Database and Firebase for offline reliability. The
-                            judges highlighted the app’s intuitive Material Design 3 interface and privacy-focused
+                            judges highlighted the app's intuitive Material Design 3 interface and privacy-focused
                             approach to AI.
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
 
+        <!-- Skills Tab -->
         <div class="tab-content" id="skills">
             <div class="skills-container">
-
                 <div class="skill-category">
                     <h3 class="category-title">Programming Languages</h3>
                     <div class="skill-bars">
@@ -400,106 +439,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="tab-content" id="education">
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-degree">
-                            BS in Software Engineering</div>
-                        <div class="education-school">
-                            University of Sargodha</div>
-                    </div>
-                    <div class="education-body">
-                        <div class="education-year"><i class="fas fa-calendar-alt"></i> 2021 - 2025</div>
-                        <div class="education-description">
-                            <b> CGPA: 3.93/4.0 (7th Semester)</b> <br>
-                            Ranked among top performers while diving into Android development from the 3rd
-                            semester—balancing algorithms and APIs with equal passion.
-                            <br><b>Key Focus:</b> Mobile App Development (Kotlin/Java), Database Systems, AI/Cloud
-                            fundamentals.
-                            <b>Final Year Project:</b> AI-driven E-Learning Platform (Kotlin + Python).
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-degree">F.Sc. Pre-Engineering</div>
-                        <div class="education-school">Punjab College of Science, Sahiwal(Sargodha)</div>
-                    </div>
-                    <div class="education-body">
-                        <div class="education-year"><i class="fas fa-calendar-alt"></i> 2019 - 2021</div>
-                        <div class="education-description">
-                            <b> Marks: 1053/1100 | Score: 95.72%</b> <br>
-                            Built a rock-solid foundation in problem-solving and logic—skills that now fuel my clean
-                            code philosophy.
-                            My education isn’t just about grades; it’s about applying theory to build real apps. From
-                            acing exams to debugging late-night code, I thrive where discipline meets creativity.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="tab-content active" id="about">
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Who Am I?</h3>
-                        <p class="timeline-description">
-                            I’m a Software Engineer with a degree from the University of Sargodha (2021–2025)— one of
-                            Pakistan’s top-ranked public universities for tech education. But more than just a degree
-                            holder, I’m a problem-solver who loves turning complex ideas into elegant, user-friendly
-                            Android apps. <br>
-                            <b>Tech Philosophy:</b> “I believe apps should work like magic, but the code should read
-                            like
-                            poetry.”
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Current Projects</h3>
-                        <p class="timeline-description">
-                            I’m currently building innovative Android apps that blend cutting-edge tech with real-world
-                            impact. My AI-powered e-learning platform (FYP) uses Python-driven video generation and
-                            Firebase to deliver personalized education. For local businesses, I developed a inCity
-                            e-commerce app with secure payments. I’m also streamlining the grooming industry with
-                            a barber booking app featuring real-time scheduling. Each project is crafted with
-                            scalability in mind—leveraging modern tools like Kotlin, MVVM, and Room DB to solve everyday
-                            challenges.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">What Drives Me?</h3>
-                        <p class="timeline-description">
-                            My journey started with a curiosity about how things work—now, I build them. Whether it’s
-                            crafting Kotlin-powered apps or tinkering with AI integrations, I’m obsessed with the
-                            intersection of technology and human experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">My Goal!</h3>
-                        <p class="timeline-description">
-                            To build intuitive, impactful mobile experiences that solve real problems—bridging
-                            technology and human needs. I want to push boundaries with AI-driven solutions, mentor
-                            aspiring developers, and contribute to open-source projects that make tech more accessible.
-                            <br>
-                            <b>Long-term?</b> To lead innovation in Android development while staying hands-on with
-                            code—because the best creators never stop learning. <i>Let’s build the future.</i>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </section>
+    
 
     <!-- Services Section -->
     <section id="services" class="section services">
@@ -1123,10 +1064,10 @@
                 </div>
                 <div class="case-study-final-images">
                     <div class="final-img">
-                        <img src="images/Project Banners/cgpa light.png 1.png" alt="CGPA Genius Screenshot 1">
+                        <img src="images/Project Banners/cgpa light.png" alt="CGPA Genius Screenshot 1">
                     </div>
                     <div class="final-img">
-                        <img src="images/Project Banners/cgpa dark.png 1.png" alt="CGPA Genius Screenshot 2">
+                        <img src="images/Project Banners/cgpa dark.png" alt="CGPA Genius Screenshot 2">
                     </div>
                 </div>
             </div>
@@ -1180,7 +1121,7 @@
                         <img src="images/Project Banners/ezy weather 1.png" alt="Ezy Weather Screenshot 1">
                     </div>
                     <div class="final-img">
-                        <img src="images/Project Banners/ezy weather 2.pngther.png" alt="Ezy Weather Screenshot 2">
+                        <img src="images/Project Banners/ezy weather 2.png" alt="Ezy Weather Screenshot 2">
                     </div>
                 </div>
             </div>
@@ -1630,7 +1571,7 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/fawad-hanif-android-developer/" class="social-link">
+                        <a href="www.linkedin.com/in/fawad-hanif" class="social-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/Software2004" class="social-link">
@@ -1716,6 +1657,7 @@
     </div>
     <script src="js/index.js"></script>
 
+    <script src="js/index2.js"></script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>

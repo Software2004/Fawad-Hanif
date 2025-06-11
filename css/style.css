@@ -7,6 +7,10 @@
     --light-bg: #f8f9fa;
     --border: #e0e0e0;
     --transition: all 0.3s ease;
+    
+    --secondary2: #6c757d;
+    --dark: #333333;
+    --gradient: linear-gradient(135deg, #007bff, #0056b3);
 }
 
 * {
@@ -1030,6 +1034,15 @@ footer {
     .section-title h2 {
         font-size: 26px;
     }
+    .hero {
+        height: 135vh;
+    }
+    .btn-outline{
+        margin-top: 10px;
+    }
+    .btn{
+        width: 85%;
+    }
     
     .hero-text h1 {
         font-size: 28px;
@@ -1776,27 +1789,31 @@ color: white;
 
         .tabs {
             display: flex;
-            gap: 10px;
-            border-radius: 8px;
-            background: white;
-            padding: 5px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            max-width: 700px;
-            overflow-x: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
         }
 
         .tab {
             padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s;
-            white-space: nowrap;
-            font-weight: 500;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--dark);
+        }
+        .tab:hover {
+            border-color: var(--primary);
+            color: var(--primary);
         }
 
         .tab.active {
             background: var(--gradient);
-            color: white;
+    border-color: var(--primary);
+    color: white;
         }
 
         .tab-content {
