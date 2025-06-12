@@ -822,6 +822,10 @@ header.scrolled{
     transform: translateX(0);
 }
 
+.contact-item {
+    cursor: pointer;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
